@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Register</title>
+    <style>
+        body{
+            margin:0 ;
+            padding: 40px;
+            font-family:Arial ,"kanit",sans-serif;
+            background-color: rgb(217, 106, 251);
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container {
+            max-width: 600px;
+            background-color: rgb(116, 148, 246);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgb(8, 8, 1);
+            margin: 0 auto;
+
+        }
+        input , select, textarea{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button{
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: aquamarine;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        h1{
+            text-align: center;
+            color: #333;
+        }
+        button:hover{
+            background-color: rgb(41, 250, 135);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Information</h1>
+        <form action="">
+
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="fname"
+            placeholder="Enter your name">
+        
+                <label for="Email">Email</label>
+                <input type="email" name="email" id="email"
+                placeholder="Enter your email">
+                
+                <label for="Date">Date of Birth</label>
+                <input type="date" name="date" id="date">
+                
+                <legend>Gender</legend>
+                <form action="gender" method="gender">
+                <select name="genter" id="gender">
+                    <option value="">--Select Gender--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">other</option>
+                </select>
+                   
+                <label for="Hobbie">Hobbie <span style="color: rgb(240, 58, 58);">*</span></label>
+                    <textarea name="hobbie" id="hobbie"  placeholder="List your hobbies" rows="4" minlength ="10" required></textarea>
+                    
+                    <label for="country">country</label>
+                    <select name="country" id="country">
+                    <option value="">--Select country--</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="America">America</option>
+                    <option value="Other">Other</option>
+                </select>
+                
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    
+
+    
+</body>
+</html>
