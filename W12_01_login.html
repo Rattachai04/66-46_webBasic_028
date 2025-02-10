@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family:'Roboto';
+            background-color: rgb(208, 210, 75);
+            background: rgb(73,9,121);
+            background: linear-gradient(90deg, rgba(73,9,121,1) 46%, rgba(0,212,255,1) 100%);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+           display: flex;
+
+            background-color: rgb(153, 228, 245);
+            width: 700px;
+
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgb(21, 1, 19);
+        }
+        .left-side {
+            background-image:url(images/background.webp) ;
+            background-size:cover ;
+            background-position: center;
+            background-blend-mode: darken;
+            background-color: rgb(255, 255, 255);
+            color: rgb(13, 12, 12);
+            padding: 20px;
+
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            text-transform: uppercase;
+            width: 60%;
+            display: flex;
+        }
+        .right-side {
+            padding: 40px;
+            width: 40%;
+
+            form{
+
+                label{
+                    display: block;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+                input{
+                    width: 100%;
+                    padding: 6px;
+                    box-sizing: border-box;
+                    margin-bottom: 8px;
+                }
+                input[type="submit"]{
+                    background-color: blueviolet;
+                    color: rgb(1, 12, 19);
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+                input[type="submit"]:hover{
+                    background-color: rgb(43, 98, 226);
+                    color: rgb(3, 11, 25);
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+                
+                }
+                a {
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: none;
+                    color: blueviolet;
+                }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h2>Information technology</h2>
+            <p>ยินดีต้อนรับเข้าสู่เว็บไซต์การเรียนวิชาการออกแบบและพัฒนาเว็บไซต์</p>
+        </div>
+            <div class="right-side">
+                <h3>Login</h3>
+                <form action="" method="post">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" required placeholder="Enter your username" required>
+                    <label for="Password">Password</label>
+                    <input type="text" name="Password" id="Password" required placeholder="Enter your username" required>
+                    <input type="submit" value="Login">
+
+                </form>
+                <p>Forgot <a href="#">Password?</a></p>
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </div>
+</body>
+    
+
+
+<body>
+    
+    
+</body>
+</html>
