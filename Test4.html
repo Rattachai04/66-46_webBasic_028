@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Stylesheet CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <header style="position: sticky; top: 0; z-index: 1000; box-shadow: 0 3px 4px rgb(69, 69, 69);">
+        <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+              <div class="col-md-3 mb-2 mb-md-0">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                  <h3 class="logo link-light">S A E K O</h3>
+                </a>
+              </div>
+        
+              <nav>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 fs-5">
+                  <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                  <li><a href="#About" class="nav-link px-2">About</a></li>
+                  <li><a href="#Performance" class="nav-link px-2">Perfomance</a></li>
+                  <li><a href="#Contact" class="nav-link px-2">Contact</a></li>
+                </ul>
+              </nav>
+              
+        
+              <div class="button1 col-md-3 text-end">
+                <button type="button" class="btn btn-primary"><a href="file/Portfolio.pdf" download="Portfolio">Download Portfolio</a></button>
+              </div>
+
+              <!-- Hamburger Menu -->
+             <div class="hamburger-icon" onclick="openMenu()">&#9776;</div>
+
+              
+      
+            </header>
+          </div>
+          <!-- Full-Screen Menu -->
+          <div class="full-screen-menu" id="fullScreenMenu">
+            <div class="close-btn" onclick="closeMenu()">✖</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Performance">Perfomance</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="file/Portfolio.pdf" download="Portfolio"><span style="color: #95ff00;">Download Portfolio</span></a></li>
+        
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- About -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="about col-10 col-sm-8 col-lg-6">
+            <img src="img/Forest1.jpg" class="d-block mx-lg-auto img-fluid object-fit-cover border rounded" alt="Bootstrap Themes" width="500" height="500" loading="lazy">
+          </div>
+          <div class="text col-lg-6">
+            <h3 class="display-6 fw-bold text-body-emphasis lh-1 mb-3">Hi, I'm a student</h3>
+            <h1 class="display-5 fw-bold text- lh-1 mb-3" style="color: #96f004; text-shadow: 2px 2px 2px gray;">Bantita Saeko</h1>
+            <p class="lead">Hello, my name is Bantita Saeko, but you can call me Ink. I am a student in the Information Technology department at Nakhon Pathom Rajabhat University. This website serves as a portfolio to showcase my projects and achievements throughout my academic journey.</p>
+            <div class="contact-main">
+                <div class="circle">
+                    <a href="https://www.linkedin.com/feed/?trk=onboarding-landing"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="circle">
+                    <a href="https://github.com/Bantita-Saeko/6646_WebBasic"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="circle">
+                    <a href="https://www.instagram.com/inkioooi/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"><a href="#Performance">Explore</a></button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4"><a href="#">Top</a></button>
+            </div>
+          </div>
+        </div>
+    
+      
+
+      <!-- Programming Skills -->
+      <div class="about container my-5" >
+        <h1 id="About" class="text-center fw-bold  my-4">Programming Skills</h1>
+        <!-- Card 1 -->
+        <div class="row g-4">
+          <div class="Card1 gap-4 col-12 col-sm-6 col-lg-4">
+            <div class="card align-items-center justify-content-center">
+              <div class="circle text-center p-1">
+                <img src="img/HTML.png" class="logo-size card-img-top " alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">HTML5</h5>
+                <p class="card-text">I use HTML for web design and create games in Construct 2 with an intermediate level</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Card1 -->
+          <!-- Card 2 -->
+          <div class="Card2 gap-4 col-12 col-sm-6 col-lg-4">
+            <div class="card align-items-center justify-content-center">
+              <div class="circle text-center p-1">
+                <img src="img/CSS.png" class="logo-size card-img-top" alt="..." width="70px">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">CSS</h5>
+                <p class="card-text">I use CSS for web styling along with making responsive designs using Bootstrap.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Card2 -->
+          <!-- Card 3 -->
+          <div class="Card3 gap-4 col-12 col-sm-6 col-lg-4">
+            <div class="card align-items-center justify-content-center">
+              <div class="circle text-center p-1">
+                <img src="img/JS.png" class="logo-size card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Javascript</h5>
+                <p class="card-text">I use JavaScript to create button functionalities in HTML at a beginner level.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Card4 -->
+          <div class="Card4 gap-4 col-12 col-sm-6 col-lg-4">
+            <div class="card align-items-center justify-content-center">
+              <div class="circle text-center p-1">
+                <img src="img/Java.png" class="logo-size card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">JAVA</h5>
+                <p class="card-text">I have a beginner-level understanding of the OOP concepts in Java.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Card4 -->
+          <!-- Card 5 -->
+          <div class="Card5 gap-4 col-12 col-sm-6 col-lg-4">
+            <div class="card align-items-center justify-content-center">
+              <div class="circle text-center p-1">
+                <img src="img/actionscript.png" class="logo-size card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Actionscript</h5>
+                <p class="card-text">I use Adobe Flash to design various types of games with an intermediate level</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Card5 -->
+          <!-- Card 6 -->
+          <div class="Card6 gap-4 col-12 col-sm-6 col-lg-4">
+            <div class="card align-items-center justify-content-center">
+              <div class="circle text-center p-1">
+                <img src="img/Boostrap.png" class="logo-size card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Bootstrap</h5>
+                <p class="card-text">I use Bootstrap to enhance HTML with features like icons and design templates.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card6 -->
+      </div>
+
+      <!-- Software Skills -->
+      <div class="container-fluid m-auto my-5" >
+        <h1 class="text-center fw-bold my-4">Software Skills</h1>
+        <!-- Card 1 -->
+        <div class="row g-4">
+          <div class="Card1 gap-4 my-4 col-12 col-sm-12 col-md-6">
+            <div class="card m-auto align-items-center justify-content-center">
+              <div class="circle2 text-center p-2">
+                <img src="img/VScode.png" class="logo-size card-img-top " alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Visual Studio Code</h5>
+                <p class="card-text">I use Visual Studio Code for designing various websites and have learned through a course called "Web Design." I have learned include HTML, CSS, Java, JavaScript</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Card1 -->
+          <!-- Card 2 -->
+          <div class="Card2 gap-4 my-4 col-12 col-sm-12 col-md-6">
+            <div class="card m-auto align-items-center justify-content-center">
+              <div class="circle2 text-center p-2">
+                <img src="img/Adobe Flash.png" class="logo-size card-img-top" alt="..." width="70px">
+              </div>
+              <div class="card-body ">
+                <h5 class="card-title text-center">Adobe Flash</h5>
+                <p class="card-text">I use Adobe Flash for game design, utilizing Adobe Illustrator to create graphics before importing them. The programming language I use is ActionScript.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Card2 -->
+          <!-- Card 3 -->
+          <div class="Card3 gap-4 my-4 col-12 col-sm-12 col-md-6">
+            <div class="card m-auto align-items-center justify-content-center">
+              <div class="circle2 text-center p-2">
+                <img src="img/Figma1.png" class="logo-size card-img-top " alt="..." width="">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Figma</h5>
+                <p class="card-text">I use Figma for designing the UX/UI of applications and have learned through a course called "Human and Computer Interaction Design." I also worked on a mini-project.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Card3 -->
+          <!-- Card 4 -->
+          <div class="Card4 gap-4 my-4 col-12 col-sm-12 col-md-6">
+            <div class="card m-auto align-items-center justify-content-center">
+              <div class="circle2 text-center p-2">
+                <img src="img/Procreate.png" class="logo-size card-img-top" alt="..." width="70px">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Procreate</h5>
+                <p class="card-text">I use the Procreate application to design and draw 2D illustrations, such as characters and environments, in combination with Adobe Animate. I also participated in a final project called "Cruel Carrot."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- End Card4 -->
+    </div>
+      
+      <!-- Performance -->
+      <div class="Performace-Card bg-body-tertiary py-5">
+      <section class="py-5 text-center container ">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 id="Performance" class="fw-bold fs-1" style="text-shadow: 2px 2px 2px gray;">Perfomance</h1>
+            <p class="lead text-body-secondary">The various works and the background details of the created projects are as follows. There are two main projects such as a collaborative project and a mini-project.</p>
+            <p>
+              <a href="#Performance-card" class="btn btn-primary my-2">Explore</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card -->
+      <div class="album py-2">
+        <div class="container">
+          <div class="container col-xxl-8">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card card-per card-1 shadow-sm">
+                  <img id="Performance-card" src="img/Cruel_Carrot.jpg " class="img-size img-thumbnail clickable-image bd-placeholder-img card-img-top " width="100%" height="500" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;"></img>
+                  <div class="card-body">
+                    <h5 class="text-center">Cruel Carrot Project</h5>
+                    <p class="card-text">I am one of the character illustrators for this project and an assistant in character design and voice acting, collaborating with two other project Header, Arisara and Kosittidach.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><a href="#Per1">View</a></button>
+                      </div>
+                      <small class="date text-body-secondary">27 Mar, 2024</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-per card-2 shadow-sm">
+                  <img src="img/App.png" class="img-size img-thumbnail clickable-image bd-placeholder-img card-img-top" width="100%" height="500" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;"></img> 
+                  <div class="card-body">
+                    <h5 class="text-center">UI Design Mini Project</h5>
+                    <span class="card-text">I designed the mobile version of the application, drawing on the knowledge gained from the <span style="font-weight: bold;">Human and Computer Interaction Design </span> course as part of a mini-project.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><a href="#Per2">View</a></button>
+                      </div>
+                      <small class="text-body-secondary">17 Mar, 2025</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Perfomance 1 -->
+          <div id="Per1" class="Per1 row featurette container my-5 py-5" style="margin: 0 auto;">
+            <div class="card-pers col-sm-6 col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">Cruel Carrot Project. <span class="span text-body-secondary">Background of story</span></h2>
+              <p class="lead py-4 pe-4">This project originated from my passion for drawing. When my sister and her boyfriend undertook their graduation project, I had the opportunity to contribute as one of the assistants responsible for character design and voice acting for a duration of 2-3 months. Throughout this period, we devoted significant effort and dedication to ensure the success of the project.  
+                The primary software I utilized for character design was <span style="font-weight: bold;">Procreate,</span> after which I meticulously assembled all the components to create scenes intended for animation using <span style="font-weight: bold;"> Adobe Animate.</span> Our collective commitment and hard work ultimately resulted in the creation of this final piece.</p>
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary "><a href="#">Top</a></button>
+                <button type="button" class="btn btn-sm btn-outline-secondary "><a href="https://www.youtube.com/watch?v=0mqs6HtoBB4">Link</a></button>
+              </div>
+            </div>
+            
+            <div class="img col-sm-6 col-md-5">
+              <img src="img/Cruel_Carrot.jpg" class=" featurette-image img-fluid mx-auto" width="300" height="300" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover; width: 500px; height: 500px;"></img>
+            </div>
+            
+            
+          </div>
+
+      <!-- Performance 2 -->
+          <div id="Per2" class="Per2 row featurette container my-5 py-5" style="margin: 0 auto;">
+            <div class="card-pers col-sm-6  col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">UI Design Mini Project <span class="text-body-secondary">App Mobile</span></h2>
+              <p class="lead py-4 pe-4">This project was inspired by my strong passion for sweets and bakeries, combined with the knowledge acquired from the <span style="font-weight: bold;">Human and Computer Interaction Design</span> course. I took on the challenge of designing the user interface of this application using <span style="font-weight: bold;">Figma</span>.  
+                This project proved to be a significant test of my creativity and capabilities, as I undertook it independently. Despite the challenges, I devoted substantial effort and dedication to every aspect of the development process, including thorough testing to ensure optimal user convenience. Consequently, this project evolved from a conceptual idea into a tangible and fully realized outcome.</p>
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary "><a href="#">Top</a></button>
+                <button type="button" class="btn btn-sm btn-outline-secondary "><a href="https://www.figma.com/proto/3EBS1wgC4d5uTqziBfCpyC/MiniProject-Coffee2-Shop?page-id=0%3A1&node-id=29-125&p=f&viewport=237%2C-8%2C0.24&t=U6wvTShQqpmNhiVO-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=29%3A98&show-proto-sidebar=1">Link</a></button>
+              </div>
+            </div>
+            <div class="img col-sm-6  col-md-5 order-md-1">
+              <img src="img/App1.jpeg" class=" featurette-image img-fluid mx-auto" width="300" height="300" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover; width: 500px; height: 500px;"></img>
+            </div>
+          </div>
+
+      </div>
+
+
+    <!-- Footer -->
+    <div class="footer-container">
+      <footer class="py-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">Home</a></li>
+          <li class="nav-item"><a href="#About" class="nav-link px-2 text-body-light">About</a></li>
+          <li class="nav-item"><a href="#Performance" class="nav-link px-2 text-body-light">Perfomance</a></li>
+          <li class="nav-item"><a href="#Contact" class="nav-link px-2 text-body-light">Contact</a></li>
+        </ul>
+        <div id="Contact" class="contact-main justify-content-center">
+          <div class="circle">
+              <a href="https://www.linkedin.com/feed/?trk=onboarding-landing"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <div class="circle">
+              <a href="https://github.com/Bantita-Saeko/6646_WebBasic"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <div class="circle">
+              <a href="https://www.instagram.com/inkioooi/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+      </div>
+        <p class="text-center text-light">© 2024 Bantita Saeko, Information Technology</p>
+      </footer>
+    </div>
+    
+    <!-- Boostrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Code Hamburger -->
+    <script>
+      function openMenu() {
+            document.getElementById("fullScreenMenu").style.display = "block";
+        }
+       
+        function closeMenu() {
+            document.getElementById("fullScreenMenu").style.display = "none";
+        }
+      
+  </script>
+
+    <!-- Code Script -->
+    <script>
+      //โค้ดนี้ใช้ JavaScript เพื่อเลือกทุกองค์ประกอบ <img> ที่มี class="clickable-image" [จะเลือก ทั้ง 3 รูป] และเพิ่ม Event Listener ให้กับแต่ละรูปภาพ เพื่อให้สามารถคลิกแล้วเกิด popup (SweetAlert2) แสดงรูปขยายได้
+  
+      document.querySelectorAll(".clickable-image").forEach(img => {   //img แทนแต่ละรูปที่ถูกเลือกในลูป
+          img.addEventListener("click", function() {    //เพิ่มฟังก์ชันให้ แต่ละรูป เมื่อถูกคลิก
+  
+              Swal.fire({
+                  //title: 'Image Preview',
+                  imageUrl: img.src, // ใช้ src ของรูปที่คลิก
+                  imageWidth: 500, // ขนาดรูปที่ขยาย
+                  imageHeight: 'auto',
+                  imageAlt: img.alt, // ใช้ alt ของรูป
+                  //showCloseButton: true,
+                  confirmButtonText: 'Close',
+                  confirmButtonColor: 'Black' , 
+                  // showConfirmButton : true,
+              });
+          });
+      });
+  </script>
+  
+</body>
+</html>
